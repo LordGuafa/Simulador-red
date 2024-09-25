@@ -4,7 +4,7 @@ class Nodo:
         self._encolamiento = encolamiento
         self._prob_caida = prob_caida
         self._id = id
-        self.hijos = {}
+        self.hijos = []
 
     def agregar_hijo(self,hijo):
         self.hijos.append(hijo)
@@ -39,6 +39,9 @@ class Nodo:
     def set_peso(self, id:int):
         self._id=id
 
+    def get_hijos(self):
+        for nodo in self.hijos:
+            return nodo
     def __str__(self):
         return f"""Id: {self._id} \n Peso: {self._peso} \n Encolamiento: {self._encolamiento}\n Caida: {self._prob_caida}"""
 
