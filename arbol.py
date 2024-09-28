@@ -26,31 +26,31 @@ def crear_nodos():
         nodos.append(nodo)
     return nodos
 
-def crear():
-    nodos = crear_nodos()
+# def crear():
+#     nodos = crear_nodos()
 
-    # Definir las conexiones de los nodos en una estructura clara
-    conexiones = {
-        0: [1, 3],
-        1: [2, 16],
-        2: [4, 10],
-        3: [13, 16],
-        4: [5],
-        5: [6, 7],
-        6: [17],
-        7: [11],
-        8: [9],
-        9: [11, 12, 16],
-        10: [11, 13],
-        12: [14, 15, 18, 19],
-        13: [14],
-        15: [20],
-        17: [18],
-        19: [20]
-    }
+#     # Definir las conexiones de los nodos en una estructura clara
+#     conexiones = {
+#         0: [1, 3],
+#         1: [2, 16],
+#         2: [4, 10],
+#         3: [13, 16],
+#         4: [5],
+#         5: [6, 7],
+#         6: [17],
+#         7: [11],
+#         8: [9],
+#         9: [11, 12, 16],
+#         10: [11, 13],
+#         12: [14, 15, 18, 19],
+#         13: [14],
+#         15: [20],
+#         17: [18],
+#         19: [20]
+#     }
 
-    arbol = crear_arbol(nodos, conexiones)
-    return arbol
+#     arbol = crear_arbol(nodos, conexiones)
+#     return arbol
 
-# Test
-test = crear()
+# # Test
+# test = crear()
