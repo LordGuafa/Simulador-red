@@ -22,7 +22,7 @@ class Nodo:
         self._encolamiento=encolamiento
 
     def get_prob_caida(self):
-        return self.prob_caida
+        return self._prob_caida
     
     def set_prob_caida(self, prob_caida:int):
         self._prob_caida=prob_caida
